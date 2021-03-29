@@ -21,3 +21,24 @@
  */
 
 // Your code here.
+
+let string = '';
+const bindingSize = 8;
+
+for (let i = 0; i < bindingSize; i++) {
+  if (i != 0) string += '\n';
+  if (i % 2 == 0) {
+    for (let j = 0; j < bindingSize; j++) {
+      if (j % 2 == 0) string += '#';
+      else string += ' ';
+    }
+  } else {
+    for (let j = 0; j < bindingSize; j++) {
+      if (j % 2 == 0) string += ' ';
+      else string += '#';
+    }
+  }
+}
+
+console.log(string);
+
