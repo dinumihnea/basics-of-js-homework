@@ -17,3 +17,21 @@
  */
 
 // Your code here.
+
+// not sure if I'm allowed to use substring()
+
+console.log('\nmethod 1:');
+
+for (let i = 1; i <= 7; i++) {
+  console.log('#######'.substring(0, i));
+}
+
+console.log('\nmethod 2:');
+
+// with no predefined methods
+
+let string = '#';
+for (let i = 0; i < 7; i++) {
+  console.log(string);
+  string += '#';
+}
