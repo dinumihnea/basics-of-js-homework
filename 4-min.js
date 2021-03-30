@@ -21,3 +21,17 @@
 // console.log(min(0, -10));
 // → -10
 //
+
+//v.4.1.
+function min(num1, num2) {
+    return num1 > num2 ? num2 : num1;
+}
+
+//v.4.2.
+function minInArr(arr){
+    let result =  arr.reduce((min, currentItem) => min < currentItem ? min : currentItem, arr[0] || 0);
+    return result;
+}
+console.log(min(0, 10));
+console.log(min(0, -10));
+console.log(minInArr([2, 4, -4, 10, 0, -9, 17]));

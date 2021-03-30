@@ -13,3 +13,15 @@
  */
 
 // Your code here.
+for(let i=0; i<100; i++){
+    //Check if i is divisible by both 5 and 3 (as these are prime numbers we can use their product to find out)
+    if (i % 15 === 0){
+        console.log("FizzBuzz")
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}

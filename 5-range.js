@@ -16,8 +16,45 @@
  */
 
 // Your code here.
-//
-// console.log(range(1, 10));
+//v.5.1.
+function range(start, end){
+    let arr = [];
+    for(let i=start;i<=end;i++){
+        arr.push(i);
+    }
+    return arr;
+}
+function sum(numArr){
+    const sum = numArr.reduce((sum, item) => sum += item, 0);
+    return sum;
+}
+
+//v.5.2.
+function range2(start, end, step){
+    let arr = [];
+    let i=start
+    if(start < end && step > 0){
+        while(i<=end){
+            arr.push(i);
+            i += step;
+        }
+    } else if (start > end && step < 0) {
+        while(i>=end){
+            arr.push(i);
+            i += step;
+        }
+    } else {
+        return "Error: please introduce valid parameters"
+    }
+    return arr;
+}
+
+console.log(range(1, 10));
+console.log(range2(1, 10, 2));
+console.log(range2(5, 2, -1));
+console.log(sum(range(1, 10)));
+
+//console.log(range(1, 10));
 // → [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // console.log(range(5, 2, -1));
 // → [5, 4, 3, 2]

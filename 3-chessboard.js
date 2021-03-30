@@ -21,3 +21,21 @@
  */
 
 // Your code here.
+let boardSize = 9
+
+for(let row=0;row<boardSize;row++){
+    let str = '';
+    for(let col=0;col<boardSize;col++){
+        if(row % 2) {
+            str += col % 2 ? "#" : " "
+        } else {
+            str += col % 2 ? " " : "#"
+        }
+    }
+    console.log(str);
+}
+
+
+
+
+
