@@ -4,7 +4,7 @@ Set of js tasks for homework
 ## How to run
 
 ### 1. Clone the project
-`git clone https://github.com/dinumihnea/homework-introduction-to-js.git`
+`git clone https://github.com/dinumihnea/basics-of-js-homework.git`
 
 ### 2. Create a separate branch, named like: `your-name`
 `git checkout -b your-name`
