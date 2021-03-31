@@ -13,11 +13,23 @@
  */
 
 // Your code here.
-//
-// Use these commands to test your code:
-//
-//console.log(min(0, 10));
-// → 0
-// console.log(min(0, -10));
-// → -10
-//
+
+function min(firstNum, secondNum) {
+    return firstNum < secondNum ? firstNum : secondNum;
+}
+
+console.log(min(0, 10));
+console.log(min(-10, 0));
+
+function minArray(arr) {
+    let initialMin = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < initialMin) {
+            initialMin = arr[i]
+        }
+    }
+    return initialMin
+}
+
+console.log(minArray([2, 4, -4, 10, 0, -9, 17]));
+
