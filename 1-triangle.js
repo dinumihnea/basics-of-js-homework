@@ -17,3 +17,18 @@
  */
 
 // Your code here.
+
+let hash = '';
+for (let i = 0; i < 7; i++) {
+    hash += '#';
+    console.log(hash)
+}
+
+// alternative way with String.prototype.repeat()
+
+for (let i = 1; i <= 7; i++) {
+    console.log('#'.repeat(i))
+}
+
+
+
