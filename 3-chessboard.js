@@ -21,3 +21,33 @@
  */
 
 // Your code here.
+
+let boardSize = 8;
+let result = '';
+
+for (let i = 0; i < boardSize; i++) {
+    for (let j = 0; j < boardSize; j++) {
+        if ( (i % 2 === 0 && j % 2 === 0) || (i % 2 !== 0 && j % 2 !== 0) ) {
+            result += '#'
+        } else {
+            result += ' '
+        }
+    }
+    result += '\n';
+}
+
+console.log(result);
+
+// Alternative way of this task using String.prototype.repeat()
+
+let boardString = '';
+
+for (let i = 0; i < boardSize; i++) {
+    if (i % 2 === 0) {
+        boardString += '# '.repeat(boardSize / 2) + '\n'
+    } else {
+        boardString += ' #'.repeat(boardSize / 2) + '\n'
+    }
+}
+
+console.log(boardString);
