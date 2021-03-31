@@ -20,4 +20,16 @@
  *
  */
 
-// Your code here.
+let rows = 8
+let hashSignCount = 4
+
+for (let row = 0; row < rows; row++) {
+  let str = ''
+  if (row % 2 === 0) str += '#'
+  else str += ' '
+
+  for (let column = 0; column < hashSignCount * 2 - 1; column++) {
+    str[str.length - 1] === '#' ? (str += ' ') : (str += '#')
+  }
+  console.log(str)
+}
