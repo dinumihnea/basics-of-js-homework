@@ -16,4 +16,9 @@
  *
  */
 
-// Your code here.
+const iterationsCount = 7
+let line = ''
+for (let i = 0; i < iterationsCount; i++) {
+  line += '#'
+  console.log(line)
+}
