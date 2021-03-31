@@ -21,3 +21,12 @@
 // console.log(min(0, -10));
 // → -10
 //
+function minArr(arr){
+    let result=0;
+    arr.reduce((acc,cur)=>{
+        if(result>cur){
+            result=cur;
+        }
+    },(arr[0]))
+    console.log(result);
+}

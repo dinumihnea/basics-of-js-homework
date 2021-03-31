@@ -13,3 +13,12 @@
  */
 
 // Your code here.
+
+function fizzBuzz(num){
+    if(num%3===0 && num%5===0) return console.log('FizzBuzz')
+    if(num%5===0) return console.log('Buzz')
+    if(num%3===0) return console.log('Fizz')
+    console.log(num)
+}
+
+

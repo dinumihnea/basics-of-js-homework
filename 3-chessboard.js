@@ -21,3 +21,37 @@
  */
 
 // Your code here.
+
+function makeString(length,type){
+    let result='';
+    if(type===1){
+        for(let i=1;i<=length;i++){
+            if(i%2!==0){
+                result+='#';
+            }else{
+                result+=' '
+            }
+        }
+    }else{
+        for(let i=1;i<=length;i++){
+            if(i%2!==0){
+                result+=' ';
+            }else{
+                result+='#'
+            }
+        }
+    }
+    console.log(result);
+}
+
+function chessBoard(size){
+    for(let i=1;i<size;i++){
+        if(i%2!==0){
+            makeString(size,1)
+        }else{
+            makeString(size,2)
+        }
+    }
+}
+
+chessBoard(6);

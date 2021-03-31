@@ -14,7 +14,6 @@
  *    negative step values so that range(5, 2, -1)
  *
  */
-
 // Your code here.
 //
 // console.log(range(1, 10));
@@ -23,3 +22,31 @@
 // → [5, 4, 3, 2]
 // console.log(sum(range(1, 10)));
 // → 55
+
+function range(start, end, step){
+    if(start>end && step>0) return [];
+    let result=[];
+    if(step===undefined){
+        for(let i =start;i<=end;i++){
+            result.push(start);
+            start++;
+        }
+    }
+    if(step<0){
+        for(let i=start;i>=end;i+=step){
+            result.push(start);
+            start+=step;
+        }
+    }
+    if(step>=2){
+        for(let i=start; i<=end;i+=step){
+            result.push(start);
+            start+=step;
+        }
+    }
+    console.log(result);
+    console.log(result.reduce((acc,cur)=>acc+cur));
+}
+
+range(11,2,-3);
+

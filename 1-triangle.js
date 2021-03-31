@@ -17,3 +17,10 @@
  */
 
 // Your code here.
+(function (){
+    let result = '#'
+    for(let i=0;i<=6;i++){
+        console.log(result)
+        result+='#'
+    }
+})();
