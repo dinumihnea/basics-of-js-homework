@@ -24,7 +24,8 @@
 // → 55
 
 function range(start, end, step){
-    if(start>end && step>0) return [];
+    if(start>end && step>0) return console.log([]);
+    if(start<end && step<0) return console.log([]);
     let result=[];
     if(step===undefined){
         for(let i =start;i<=end;i++){
@@ -48,5 +49,5 @@ function range(start, end, step){
     console.log(result.reduce((acc,cur)=>acc+cur));
 }
 
-range(11,2,-3);
+range(2,26,2);
 

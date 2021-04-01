@@ -45,7 +45,7 @@ function makeString(length,type){
 }
 
 function chessBoard(size){
-    for(let i=1;i<size;i++){
+    for(let i=1;i<=size;i++){
         if(i%2!==0){
             makeString(size,1)
         }else{
@@ -54,4 +54,4 @@ function chessBoard(size){
     }
 }
 
-chessBoard(6);
+chessBoard(7);

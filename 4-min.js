@@ -22,7 +22,7 @@
 // → -10
 //
 function minArr(arr){
-    let result=0;
+    let result=arr[0];
     arr.reduce((acc,cur)=>{
         if(result>cur){
             result=cur;
@@ -30,3 +30,5 @@ function minArr(arr){
     },(arr[0]))
     console.log(result);
 }
+
+minArr([2,4,5,6,1,-1])
