@@ -21,3 +21,15 @@
  */
 
 // Your code here.
+size = 8;
+str = '';
+const grid = function (size) {
+  for (let i = 0; i < size; i++) {
+    for (let j = 0; j < size; j++)
+      if ((j + i) % 2 == 0) str += '#';
+      else str += ' ';
+    str += '\n';
+  }
+  console.log(str);
+};
+grid(10);

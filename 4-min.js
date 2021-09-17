@@ -21,3 +21,23 @@
 // console.log(min(0, -10));
 // → -10
 //
+
+let minNum = 0;
+const min = function (a, b) {
+  if (a < b) minNum = a;
+  else minNum = b;
+  return minNum;
+};
+
+console.log(min(0, 10));
+console.log(min(0, -10));
+
+/*Optional*/
+
+const minArr = function (arr) {
+  let min = arr[0];
+  for (let i = 0; i < arr.length; i++) if (arr[i] < arr[0]) min = arr[i];
+  return min;
+};
+
+console.log(minArr([2, 4, -4, 10, 0, -9, 17]));

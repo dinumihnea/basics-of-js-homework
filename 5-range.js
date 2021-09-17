@@ -23,3 +23,24 @@
 // → [5, 4, 3, 2]
 // console.log(sum(range(1, 10)));
 // → 55
+
+const range = function (start, end, step = 1) {
+  let arr = [];
+
+  if (start < end) for (let i = start; i <= end; i += step) arr.push(i);
+  else for (let i = start; i >= end; i += step) arr.push(i);
+
+  return arr;
+};
+
+const sum = function (arr) {
+  let arrSum = 0;
+  for (let i = 0; i < arr.length; i++) arrSum += arr[i];
+  return arrSum;
+};
+
+console.log(range(1, 10));
+
+console.log(range(5, 2, -1));
+
+console.log(sum(range(5, 2, -1)));
