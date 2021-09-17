@@ -13,11 +13,20 @@
  */
 
 // Your code here.
-//
-// Use these commands to test your code:
-//
-//console.log(min(0, 10));
-// → 0
-// console.log(min(0, -10));
-// → -10
-//
+
+//4.1
+const min = (a, b) => a > b ? b : a; 
+
+console.log(min(0, 10));
+
+//4.2
+const minArr = (arr) => { 
+  let min = arr[0];
+  for (let i = 1; i <= arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  return min;
+}
+console.log(minArr([2, 4, -4, 10, 0, -9, 17]));
